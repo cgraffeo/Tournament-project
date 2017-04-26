@@ -76,8 +76,7 @@ def playerStandings():
               "(select count(*) from matches where matches.winner = players.player_id) as wins, "
               "(select count(*) from matches where matches.winner = players.player_id "
               "or matches.loser = players.player_id) as total_matches "
-              "from players "
-              "order by wins desc")
+              "from players order by wins desc")
     rows = c.fetchall()
     db.close()
     return rows

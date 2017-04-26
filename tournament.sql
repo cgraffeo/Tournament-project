@@ -5,8 +5,8 @@
 --
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
--- figure out what is needed in each database table, make tables (2 players and matches) --
--- player id, name match id winer/loser
+--
+--Drop Database if it exists already, create a new one then connect
 DROP DATABASE IF EXISTS tournament;
 CREATE DATABASE tournament;
 \connect tournament;
